@@ -1,0 +1,11 @@
+# Fichiers de logs
+access_logs.txt
+logs.txt
+
+# Fichiers Python
+__pycache__/
+*.pyc
+
+# Autres fichiers temporaires
+*.log
+*.tmp

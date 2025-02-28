@@ -55,6 +55,7 @@ python test_load.py
 ddos-test-python/
 ├── sim_ddos.php      # Interface web et logs
 ├── test_load.py      # Script de test Python
+├── .gitignore        # Configuration des fichiers ignorés
 ├── assets/
 │   └── css/
 │       └── style.css # Styles de l'interface
