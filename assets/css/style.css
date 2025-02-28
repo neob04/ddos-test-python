@@ -1,0 +1,107 @@
+body {
+    background-color: #1a1a1a;
+    color: #7af7c3;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 15px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #4a9ced;
+    border-bottom: 1px solid #4a9ced;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #4a9ced;
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+h2, h3 {
+    color: #66b3ff;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.stats-box {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid #4a9ced;
+}
+
+.stats-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.stats-item {
+    margin: 5px 0;
+    padding: 5px 8px;
+    background-color: rgba(122, 247, 195, 0.05);
+    border-left: 2px solid #7af7c3;
+    font-size: 0.9em;
+}
+
+.total-requests {
+    color: #e86666;
+    font-size: 1.1em;
+    text-shadow: 0 0 5px rgba(232, 102, 102, 0.5);
+}
+
+.logs-display {
+    background-color: rgba(26, 26, 26, 0.95);
+    padding: 10px;
+    border: 1px solid #7af7c3;
+    border-radius: 3px;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: auto;
+    box-shadow: 0 0 5px rgba(122, 247, 195, 0.2);
+    font-size: 0.9em;
+}
+
+.reset-button {
+    background: linear-gradient(45deg, #4a9ced, #7af7c3);
+    color: #1a1a1a;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(74, 156, 237, 0.3);
+}
+
+.reset-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(74, 156, 237, 0.5);
+}
+
+@keyframes glitch {
+    0% { text-shadow: 1px 1px #4a9ced, -1px -1px #7af7c3; }
+    50% { text-shadow: -1px 1px #4a9ced, 1px -1px #7af7c3; }
+    100% { text-shadow: 1px 1px #4a9ced, -1px -1px #7af7c3; }
+}
+
+h1:hover {
+    animation: glitch 0.2s infinite;
+}
